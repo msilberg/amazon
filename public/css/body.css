@@ -1,0 +1,32 @@
+body, html {
+    display: block;
+    height: 90%;
+    font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+    font-size: 12px;
+
+}
+.cont {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.cont-cell {
+    display: table-cell;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+}
+.cont-cell ul {
+    display: inline-block;
+    list-style-type: none;
+}
+.cont-cell ul>li {
+    float: left;
+}
+.cont-cell ul>li:first-child {
+    width: 50px;
+}
+.cont-cell ul>li:last-child {
+    width: 600px;
+}
