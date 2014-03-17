@@ -32,6 +32,7 @@ $app->get('/api/robots/search/{name}', function($name) {
         $product = array();
         $product['title'] = $pq->find('div.inner a.title')->attr('title');
         $product['image'] = $pq->find('div.inner a.title div.imageContainer')->html();
+        $product['image_url'] = $pq->find('div.inner a.title div.imageContainer img')->attr('src');
         $price = $pq->find('div.inner span.s9Price')->html();
         $product['price'] = (strlen($price) == 0)? 'price is not defined' : $price;
         $description = $pq->find('div.inner div.gry')->html();
